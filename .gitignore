@@ -1,0 +1,31 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv_hft/
+.venv/
+env/
+venv/
+ENV/
+
+# Data and Models (DO NOT COMMIT HUGE FILES)
+data/
+trade_samples/
+models/
+*.parquet
+*.json
+*.csv
+*.pkl
+*.cbm
+
+# Environment variables
+.env
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# macOS
+.DS_Store

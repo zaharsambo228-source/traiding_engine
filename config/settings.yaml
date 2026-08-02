@@ -1,0 +1,22 @@
+exchange:
+  name: binance
+  type: future
+  testnet: false
+  api_key: ${BINANCE_API_KEY}
+  api_secret: ${BINANCE_API_SECRET}
+
+strategy:
+  name: MomentumBomberman
+  timeframe: 5m
+  execution_timeframe: 1m
+  max_open_trades: 5
+
+risk:
+  stop_loss_pct: 0.02 # 2% per trade
+  max_daily_drawdown: 0.05 # 5% max daily drawdown
+  kill_switch_enabled: true
+  cooldown_period_minutes: 60
+
+database:
+  type: sqlite
+  path: data/trades.sqlite

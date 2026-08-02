@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  hft_collector:
+    build:
+      context: .
+      dockerfile: Dockerfile.collector
+    container_name: hft_collector
+    restart: always
+    volumes:
+      # Пробрасываем папку data наружу, чтобы данные сохранялись на Windows машине
+      - ./data/hft:/app/data/hft

@@ -1,0 +1,16 @@
+# config/settings.yaml
+exchange:
+  name: okx
+  type: future
+  testnet: false
+  api_key: ${BINANCE_API_KEY}
+  api_secret: ${BINANCE_API_SECRET}
+
+screener:
+  quote_currency: USDT
+  min_24h_volume_usd: 200000000
+  min_price_change_pct: 10.0
+  min_trades: 3000000
+  min_natr: 2.0
+  min_5m_range_pct: 2.0
+  max_pairs_to_monitor: 10
